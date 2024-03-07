@@ -1,0 +1,13 @@
+ # 15 salario liquido
+salario_hora = float(input('Quanto você ganha por hora? '))
+horas_trabalhadas = float(input('Quantas horas trabalhadas em um mês? '))
+salario_total = salario_hora * horas_trabalhadas
+
+print('Seu salário total é: ', salario_total)
+
+inss = salario_total * 0.08
+imposto_renda = salario_total * 0.11
+sindicato = salario_total * 0.05
+salario_liquido = salario_total - inss - imposto_renda - sindicato
+
+print('Seu salário líquido é: ', salario_liquido)
